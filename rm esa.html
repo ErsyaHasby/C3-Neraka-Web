@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More - Ersya Hasby Satria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d1a26;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #1a2e3f;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #24afff;
+            margin-top: 10px;
+        }
+        /* Foto Profil */
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 3px solid #24afff; /* Tambahkan border agar foto terlihat lebih rapi */
+        }
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Mengatur agar gambar memenuhi lingkaran tanpa distorsi */
+        }
+        .info {
+            margin: 10px 0;
+        }
+        .info h3 {
+            margin: 5px 0;
+            color: #24afff;
+        }
+        .info p {
+            margin: 0;
+        }
+        .skills, .education {
+            margin-top: 15px;
+            text-align: left;
+        }
+        .skills ul, .education ul {
+            padding-left: 20px;
+        }
+        .skills li, .education li {
+            list-style-type: disc;
+            margin-bottom: 5px;
+        }
+
+        /* Pemutar Musik */
+    .music-player {
+            background-color: #24afff;
+            border-radius: 30px;
+            padding: 20px;
+            margin-top: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            color: #ffffff;
+        }
+    .music-player .cover {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 3px solid #ffffff;
+        }   
+    .music-player .song-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+    .music-player .artist-name {
+            font-size: 14px;
+            color: #d1d1d1;
+            margin-bottom: 15px;
+        }
+    .music-player .play-button {
+            background-color:#1a2e3f;
+            color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Foto Profil -->
+        <div class="profile-photo">
+            <img src="rm esa.png" alt="Foto Ersya Hasby Satria">
+        </div>
+        
+        <!-- Nama -->
+        <h1>Ersya Hasby Satria</h1>
+        <p>Teknik Komputer dan Informatika <br> Politeknik Negeri Bandung</p>
+        
+        <!-- Informasi Kontak -->
+        <div class="info">
+            <h3>Nomor Telepon</h3>
+            <p>089652251225</p>
+        </div>
+        
+        <div class="info">
+            <h3>Alamat Email</h3>
+            <p>ersya.hasby.tif24@polban.ac.id</p>
+        </div>
+        
+        <div class="info">
+            <h3>Domisili</h3>
+            <p>Kampung Cisasawi, Desa Cihanjuang, Kecamatan Prongpong, Kabupaten Bandung Barat</p>
+        </div>
+        
+        <!-- Riwayat Pendidikan -->
+        <div class="education">
+            <h3>Education</h3>
+            <ul>
+                <li>Politeknik Negeri Bandung - D3 Teknik Informatika</li>
+                <li>SMK Negeri 11 Bandung - Teknik Komputer dan Jaringan</li>
+                <li>SMP Negeri 1 Parongpong</li>
+                <li>SD Negeri 218 Sarijadi</li>
+            </ul>
+        </div>
+        
+        <!-- Kemampuan dan Keterampilan -->
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Programming: Python, JavaScript, HTML, CSS</li>
+                <li>Service alat-alat kantor</li>
+                <li>Perangkat keras komputer</li>
+                <li>Kerjasama dalam tim</li>
+                <li>Pekerja keras dan bertanggung jawab</li>
+            </ul>
+        </div>
+        <div class="music-player">
+            <!-- Gambar cover album -->
+            <img src="music esa.jpg" alt="Album Cover" class="cover">
+        
+            <!-- Judul lagu dan nama artis -->
+            <div class="song-title">Duka</div>
+            <div class="artist-name">Last Child</div>
+        
+            <!-- Tombol Play/Pause -->
+            <button class="play-button" id="playButton">▶</button>
+        
+            <!-- Audio player (tersembunyi) -->
+            <audio id="audioPlayer">
+                <source src="music esa.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <script>
+                // JavaScript untuk kontrol tombol Play/Pause
+                const playButton = document.getElementById('playButton');
+                const audioPlayer = document.getElementById('audioPlayer');
+        
+                playButton.addEventListener('click', () => {
+                    if (audioPlayer.paused) {
+                        audioPlayer.play();
+                        playButton.textContent = '⏸'; // Ubah ikon tombol ke Pause
+                    }  else {
+                        audioPlayer.pause();
+                        playButton.textContent = '▶'; // Ubah ikon tombol ke Play
+                    }
+                });
+        </script>
+    </div>
+</body>
+</html>
