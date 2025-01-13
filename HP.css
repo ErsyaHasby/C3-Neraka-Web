@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    scrollbar-width: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: #ecf8f9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+}
+
+.mylogo {
+    position: relative;
+    font-size: 25px;
+    color: #ecf8f9;
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+span {
+    color: #24afff;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.1em;
+    color: #ecf8f9;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 30px;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    color: #032335;
+    background-color: #24afff;
+}
+
+.bg {
+    background-image: url(bg4.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.teks {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.teks h1 {
+    color: #ecf8f9;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.teks p {
+    color: #ecf8f9;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    background-color: #032335;
+    padding: 70px 10%;
+}
+
+.home2 {
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    background-color: #032335;
+    padding: 70px 5% 70px 10%;
+}
+
+.content2 {
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+.content2 h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ecf8f9;
+}
+
+.content2 h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    color: #ecf8f9;
+}
+
+.content2 p {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #ecf8f9;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.img-container2 {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-container2 img {
+    width: 470px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.img-container {
+    position: absolute;
+    top: 20%;
+    right: 100px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ecf8f9;
+}
+
+.content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    color: #ecf8f9;
+}
+
+.content p {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #ecf8f9;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.medsos a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    font-size: 40px;
+    fill: #ecf8f9;
+    margin: 50px 25px 50px 0;
+}
+
+.medsos a:hover {
+    fill: #24afff;
+}
+
+.btn {
+    background-color: #24afff;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    border: 2px solid transparent;
+}
+
+.btn a {
+    font-size: 1.6rem;
+    color: #032335 ;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #ecf8f9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
